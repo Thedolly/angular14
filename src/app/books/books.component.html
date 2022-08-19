@@ -1,0 +1,29 @@
+<p>Books!</p>
+
+<!-- <button (click)="isShowing = !isShowing">
+    toggle
+</button> -->
+<!-- <button (click)="handleClick()"[disabled]="isDisabled">Show Books</button> -->
+<!-- <button (click)=" this.isShowing = !this.isShowing"> -->
+    <!-- <span *ngIf="!isShowing">show books</span>
+    <span *ngIf="isShowing">hide books</span> -->
+    <!-- <ng-container *ngIf="!isShowing">show books</ng-container>
+    <ng-container *ngIf="isShowing">hide books</ng-container>
+</button> -->
+<!-- <input type="text" (input) = "handleInput($event)"/> -->
+<!-- <input type="text" [(ngModel)] = "myName"/> -->
+<!-- <div>{{ myName }}</div> -->
+<ul *ngIf="isShowing">
+ <ng-container *ngFor="let book of books; let i=index">
+   <!-- <app-book (emitBook)="addToCart($event)" [book]="book"></app-book> -->
+   <app-book [book]="book"></app-book>
+ </ng-container>
+    <!-- <li>
+        <img [src] ="src2 " [alt]="name2" width="100">
+         by {{ authore2 }}
+    </li> -->
+    
+</ul>
+
+
+
